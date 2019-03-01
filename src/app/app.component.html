@@ -1,0 +1,25 @@
+<form class="ui form large segment">
+  <h3 class="ui header">Add a song</h3>
+
+  <div class="field">
+    <label for="title">Title:</label>
+    <input name="title" id="title" #newtitle>
+  </div>
+  <div class="field">
+    <label for="link">Link:</label>
+    <input name="link" id="link" #newlink>  
+  </div>
+
+  <button (click)="addSong(newtitle, newlink)"
+          class="ui positive right floated button">
+        Submit link
+  </button>
+</form>
+<form class="ui segment">
+  <div class="ui grid posts">
+<app-song
+*ngFor="let foobar of songs"
+[song]="foobar">
+</app-song>
+</div>
+</form>

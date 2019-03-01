@@ -1,0 +1,55 @@
+@import './app/vendor/semantic.min.css';
+
+body {
+  background-image: url("assets/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+form.ui.segment.form {
+  margin-top: 3em;
+  background-color: rgb(197, 247, 226);
+  opacity: 0.9;
+}
+
+form.form:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.ui.grid.posts {
+padding-left: 1em}
+
+.meta {
+  color: rgb(164, 238, 193)
+}
+
+.ui.grid>.row>.column.votes {
+  display: flex;
+}
+
+ul.ui.list li:before {
+  content: '';
+}
+
+.voters {
+  clear: both;
+  width: 100%;
+}
+
